@@ -182,7 +182,7 @@ function App() {
 
           {response?.error && (
             <div style={{ color: '#d32f2f', background: '#fff3f2', border: '1px solid #f9c0c0', padding: 12, borderRadius: 8, margin: '18px 0', fontWeight: 600, textAlign: 'center' }}>
-              Error: {response.error}
+              Error: {typeof response.error === 'string' ? response.error : JSON.stringify(response.error)}
             </div>
           )}
           {response && !response.error && (

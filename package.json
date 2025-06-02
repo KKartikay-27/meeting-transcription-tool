@@ -2,7 +2,7 @@
   "name": "meeting-transcription-tool",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"cd backend && source venv/bin/activate && uvicorn main:app --reload\" \"cd frontend && npm start\""
+    "dev": "concurrently \"bash -c 'cd backend && source venv/bin/activate && uvicorn main:app --reload'\" \"cd frontend && npm start\""
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
